@@ -1,0 +1,39 @@
+body{
+    background-color: beige;
+}
+
+ul{
+    border-color: rgb(42, 56, 165);
+    border-width: 1px ;
+    border-style:dotted ;
+}
+.first {color: aqua;}
+.second{color: rgb(90, 70, 150);font-size: 
+    larger;font-family: 'Times New Roman', Times, serif;}
+    .box{
+        border-color: rgb(42, 56, 165);
+        border-width: 1px ;
+        border-style:solid ;
+        height: 50cm;
+        width: 5cm;
+        
+        
+        margin: 10px;
+    
+    }
+    .box2{
+        position: fixed;
+        top: 100px;
+        left: 50px;
+
+    }
+    .box3{
+        position: absolute;
+        top: 10px;
+        right: 30px;
+
+    }
+    .box4{
+        position: relative;
+    }
+    
