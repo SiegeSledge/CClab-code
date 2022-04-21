@@ -1,0 +1,25 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+#canvascontainer{
+  display: flow-root;
+}
+h1{
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: aquamarine;
+  
+}
+h3{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: large;
+}
+
+.example{
+  border-width: 2cm;
+  position: absolute;
+  left:15cm;
+  top: 4cm;
+
+}
