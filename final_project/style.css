@@ -11,7 +11,7 @@ h1{
   font-size: 2cm;
 }
 p{
-  font-family: 'OSwald', Courier, monospace ;
+  font-family: 'OSwald', Courier, monospace,bold ;
   font-size: 1cm;
 }
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
