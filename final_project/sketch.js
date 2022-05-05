@@ -40,7 +40,7 @@ class Obstacle {
     this.x = width
     this.w = 30
     this.topMin = 50
-    this.botMin = height - 50
+    this.botMin = height - 100
     this.gapStart = random(this.topMin, this.botMin)
     this.gapLength = 200
     this.speed = 3
@@ -62,7 +62,7 @@ class Obstacle {
     }
 
     this.hits = function (slime) {
-      if (slime.y < this.gapStart || slime.y > this.gapStart + this.gapLength) {
+      if (slime.y > this.gapStart + this.gapLength) {
         if (slime.x > this.x && slime.x < this.x + this.w) {
           this.highlight = true
           return true
@@ -89,7 +89,9 @@ function preload(){
 function setup(){
   let canvas = createCanvas(800, 400)
   canvas.parent('canvasContainer')
+  
   slime = new Slime()
+  
   pipesCleared = 0
   obstaclesHit = 0
   playQuality = 10
@@ -100,6 +102,7 @@ function setup(){
 }
 
 function draw(){
+  
   clear()
   fill(0, 0, 255)
   textSize(20)
@@ -135,9 +138,3 @@ function draw(){
   }
   
 }
-
-//function keyPressed(){
- // if (key === " ") {
-   // slime.goUp() 
-  //}
-//}
