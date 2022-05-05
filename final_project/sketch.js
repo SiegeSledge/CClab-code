@@ -80,16 +80,13 @@ let pipesCleared
 let obstaclesHit
 let playQuality
 let mic
-let slimebody
 
-function preload(){
-  img = loadImage('slime.png');
-}
 
 function setup(){
   let canvas = createCanvas(800, 400)
   canvas.parent('canvasContainer')
-  
+  let bg=loadImage("pics/background1.jpg");
+  background(bg);
   slime = new Slime()
   
   pipesCleared = 0
