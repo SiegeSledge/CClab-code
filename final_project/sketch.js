@@ -54,6 +54,7 @@ class Obstacle {
       }
       //rect(this.x, 0, this.w, this.gapStart)
       rect(this.x, this.gapStart + this.gapLength, this.w, height)
+      image(stone,this.x, this.gapStart + this.gapLength, this.w, height)
     }
     this.update = function () {
       this.x -= this.speed
@@ -83,9 +84,11 @@ let playQuality
 let mic
 let img
 let slimebody
+let stone;
 function preload(){
   img = loadImage('pics/background1.jpg');
   slimebody=loadImage('pics/slime.png');
+  stone=loadImage("pics/barrier.png");
 }
 function setup(){
   let canvas = createCanvas(800, 400)
