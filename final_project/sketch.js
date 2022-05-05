@@ -9,6 +9,7 @@ class Slime {
     this.show = function () {
       fill(255)
       ellipse(this.x, this.y, 32, 32)
+      image(slimebody,this.x-150,this.y-150,300,300)
     }
 
     this.goUp = function () {
@@ -80,13 +81,17 @@ let pipesCleared
 let obstaclesHit
 let playQuality
 let mic
-
-
+let img
+let slimebody
+function preload(){
+  img = loadImage('pics/background1.jpg');
+  slimebody=loadImage('pics/slime.png');
+}
 function setup(){
   let canvas = createCanvas(800, 400)
   canvas.parent('canvasContainer')
-  let bg=loadImage("pics/background1.jpg");
-  background(bg);
+  background(255);
+  image(img, 0, 0);
   slime = new Slime()
   
   pipesCleared = 0
@@ -102,6 +107,7 @@ function draw(){
   
   clear()
   fill(0, 0, 255)
+  image(img, 0, 0);
   textSize(20)
   textFont("Helvetica")
   text('Obstacles Cleared: ' + pipesCleared, 20, 20)

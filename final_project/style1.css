@@ -5,7 +5,6 @@ html, body {
 #canvasContainer{
     align-items: center;
         display: flex;
-        
         justify-content: center;
     }
 
