@@ -23,3 +23,9 @@ font-size: large;
   top: 4cm;
 
 }
+.intro{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: bisque;
+  font-size: 0.6cm;
+  background-color: rgb(71, 69, 188);
+}
