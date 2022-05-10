@@ -138,7 +138,7 @@ function draw(){
       }      
   }
   let vol = mic.getLevel();
-  text("Your Voice Level: "+vol,20,80);
+  text("Your Voice Level: "+round(vol,2),20,80);
   if (vol>=0.2){
     slime.goUp()
   }
