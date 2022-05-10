@@ -85,6 +85,7 @@ let mic
 let img
 let slimebody
 let stone;
+let sense;
 function preload(){
   img = loadImage('pics/background1.jpg');
   slimebody=loadImage('pics/slime.png');
@@ -95,6 +96,7 @@ function setup(){
   canvas.parent('canvasContainer')
   background(255);
   image(img, 0, 0);
+  sense=prompt("What level of voice do you want to challenge?(from 0 to 1) ")
   slime = new Slime()
   
   pipesCleared = 0
@@ -139,7 +141,7 @@ function draw(){
   }
   let vol = mic.getLevel();
   text("Your Voice Level: "+round(vol,2),20,80);
-  if (vol>=0.2){
+  if (vol>=sense){
     slime.goUp()
   }
   
